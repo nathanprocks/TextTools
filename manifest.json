@@ -1,0 +1,38 @@
+{
+  "name": "Text Tools",
+  "version": "0.5",
+  "description": "Tools for quickly modifying text such as backwards text, upside-down text and rainbow text.",
+  
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icon_19.png",
+    "default_popup": "popup.html",
+    "default_title": "Text Tools"
+  },
+  "icons": {
+    "19": "icon_19.png",
+    "128": "icon_128.png"
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "*://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": [
+        "js/jquery-2.0.3.min.js",
+        "js/tools.js",
+        "js/flippedchars.js",
+        "js/jquery.selection.js",
+        "js/replaceSelected.js",
+        "js/contentscript.js"
+      ]
+    }
+  ]
+}

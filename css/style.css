@@ -1,0 +1,89 @@
+body {
+	display: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: grey;
+	text-align: center;
+}
+
+html {
+	width: 250px;
+	background-color: grey;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a.backbutton {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 30px;
+	font-size: 14pt;
+	background-color: #eee;
+	color: grey;
+}
+
+a.copybutton {
+	float: right;
+	margin-right: 8px;
+	font-size: 12pt;
+	padding: 2px;
+	color: lime;
+}
+
+a.menuitem {
+	display: block;
+	width: 100%;
+	border-bottom: solid 1px grey;
+	padding: 5px 0px;
+	font-family: sans-serif;
+	background-color: #eee;
+	color: grey;
+}
+
+.header {
+	color: lightgrey;
+}
+
+.footer {
+	position: absolute;
+	bottom: -10px;
+	width: 100%;
+	text-align: center;
+	font-size: 10pt;
+	color: lightgrey;
+}
+
+textarea {
+	width: 230px;
+	max-width: 230px;
+	height: 80px;
+	max-height: 80px;
+}
+
+.rainbowview {
+	margin-left: 11px;
+	margin-bottom: -1px;
+	width: 228px;
+	height: 80px;
+	background-color: white;
+	text-align: left;
+	overflow: scroll;
+	word-wrap: break-word;
+}
+
+.codetype {
+	float: left;
+	margin-left: 8px;
+	color: lime;
+}
+
+/* http://rainbowcoding.com/how-to-create-rainbow-text-in-html-css-javascript/ */
+.rainbow {
+	background-image:-webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color:transparent;
+	-webkit-background-clip: text;
+}
