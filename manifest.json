@@ -30,7 +30,6 @@
         "js/tools.js",
         "js/flippedchars.js",
         "js/jquery.selection.js",
-        "js/replaceSelected.js",
         "js/contentscript.js"
       ]
     }
