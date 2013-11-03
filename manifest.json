@@ -33,5 +33,11 @@
         "js/contentscript.js"
       ]
     }
+  ],
+  "web_accessible_resources": [
+    "icon_16.png",
+    "icon_reverse.png",
+    "icon_flip.png",
+    "icon_rainbow.png"
   ]
 }
