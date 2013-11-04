@@ -2,6 +2,8 @@ function resize(width, height, speed, callback) {
 	$('html').animate({'width': width, 'height': height}, speed, callback);
 }
 $(document).ready(function(){
+    if (window.location.pathname == '/popup.html')
+        resize(250, 160, 1000);
     $('body').fadeIn('fast');
 
     // Back to menu
