@@ -9,13 +9,13 @@
     "persistent": true
   },
   "browser_action": {
-    "default_icon": "icon_19.png",
+    "default_icon": "icons/icon_19.png",
     "default_popup": "popup.html",
     "default_title": "Text Tools"
   },
   "icons": {
-    "19": "icon_19.png",
-    "128": "icon_128.png"
+    "19": "icons/icon_19.png",
+    "128": "icons/icon_128.png"
   },
   "permissions": [
     "tabs",
@@ -35,9 +35,9 @@
     }
   ],
   "web_accessible_resources": [
-    "icon_16.png",
-    "icon_reverse.png",
-    "icon_flip.png",
-    "icon_rainbow.png"
+    "icons/icon_16.png",
+    "icons/icon_reverse.png",
+    "icons/icon_flip.png",
+    "icons/icon_rainbow.png"
   ]
 }

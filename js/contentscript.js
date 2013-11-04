@@ -14,10 +14,10 @@ function replaceScratch(replaceText) {
 }
 if(window.location.href.substring(0, 30) == "http://scratch.mit.edu/discuss") {
 //$(".markItUpContainer .markItUpHeader > ul").append('<li class="markItUpSeparator">---------------</li><li class="markItUpButton markItUpDropMenu markItUpTextTools"><a href="" title="TextTools - WIP">TextTools - WIP</a><ul><li class="markItUpButton"><a href="" title="Rainbow" class="markItUpRainbow">Rainbow - BBCode</a></li><li class="markItUpButton"><a href="#" title="Flipped" class="markItUpFlip">Flipped</a></li><li class="markItUpButton"><a href="#" title="Reversed" class="markItUpReverse">Reversed</a></li></ul></li>');
-//$(".markItUpTextTools > a").css("background-image", "url(" + chrome.extension.getURL("icon_16.png") + ")");
-//$(".markItUpRainbow").css("background-image", "url(" + chrome.extension.getURL("icon_rainbow.png") + ")");
-//$(".markItUpFlip").css("background-image", "url(" + chrome.extension.getURL("icon_flip.png") + ")");
-//$(".markItUpReverse").css("background-image", "url(" + chrome.extension.getURL("icon_reverse.png") + ")");
+//$(".markItUpTextTools > a").css("background-image", "url(" + chrome.extension.getURL("icons/icon_16.png") + ")");
+//$(".markItUpRainbow").css("background-image", "url(" + chrome.extension.getURL("icons/icon_rainbow.png") + ")");
+//$(".markItUpFlip").css("background-image", "url(" + chrome.extension.getURL("icons/icon_flip.png") + ")");
+//$(".markItUpReverse").css("background-image", "url(" + chrome.extension.getURL("icons/icon_reverse.png") + ")");
 //$(".markItUpTextTools > a").click(function(e) {
 //    e.preventDefault();
 //});
