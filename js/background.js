@@ -35,7 +35,7 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
-	'title': 'Rainbowify - Forum',
+	'title': 'Rainbowify - BBCode',
 	'contexts': ['editable'],
 	'onclick': rainbowBBCode
 });
