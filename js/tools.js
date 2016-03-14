@@ -30,20 +30,12 @@ function rgb_to_hex(red, green, blue)
  *	End of section
  */
 
-function reverse(text) { 
-	var output = '';
-	for (var i = text.length; i >= 0; i--) {
-		output = output + text.charAt(i);
-	}
-	return(output);
+function reverse(text) {
+	return Array.from(text).reverse().join('');
 }
 
-function flip(text) { 
-	var output = '';
-	for (var i = text.length; i >= 0; i--) {
-		output = output + getFlipped(text.charAt(i));
-	}
-	return(output);
+function flip(text) {
+	return Array.from(text).map(function(c){return getFlipped(c)}).reverse().join('');
 }
 
 function rainbow(text) {
@@ -53,7 +45,7 @@ function rainbow(text) {
 		return rainbowBBCode(text);
 }
 
-function rainbowHTML(text) { 
+function rainbowHTML(text) {
 	/*
 	 *	This section is based on
 	 *	http://rainbowcoding.com/how-to-create-rainbow-text-in-html-css-javascript/
