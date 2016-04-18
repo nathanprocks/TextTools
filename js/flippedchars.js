@@ -1,4 +1,4 @@
-var flippedchars = new Array(
+var flippedChars = new Array(
 		// Lower case
 		'a', 'ɐ', 'a',
 		'b', 'q', 'b',
@@ -59,9 +59,9 @@ var flippedchars = new Array(
 	);
 
 window.getFlipped = function(chr) {
-	var i = flippedchars.indexOf(chr);
+	var i = flippedChars.indexOf(chr);
 	if (i == -1) {
 		return chr;
 	}
-	return flippedchars[i+1];
+	return flippedChars[i+1];
 }
