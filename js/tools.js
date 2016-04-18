@@ -45,6 +45,10 @@ function rainbow(text) {
 		return rainbowBBCode(text);
 }
 
+function bubble(text) {
+	return Array.from(text).map(function(c){return getBubble(c)}).join('');
+}
+
 function rainbowHTML(text) {
 	/*
 	 *	This section is based on
@@ -112,6 +116,9 @@ $(document).ready(function(){
 				$('.rainbowview').html(rainbowHTML($('#text-normal').val()));
 				$('#text-rainbow').val(rainbow($('#text-normal').val()));
 				break;
+			case '/tools/bubble.html':
+				$('#text-bubble').val(bubble($('#text-normal').val()));
+				break;
 		}
 	});
 
@@ -143,6 +150,9 @@ $(document).ready(function(){
 				break;
 			case '/tools/rainbow.html':
 				$('#text-rainbow').select();
+				break;
+			case '/tools/bubble.html':
+				$('#text-bubble').select();
 				break;
 		}
 		document.execCommand('Copy');

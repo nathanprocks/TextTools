@@ -52,4 +52,16 @@ $(document).ready(function(){
     }).click(function() {
         resize(250, 355, 500, function(){window.location = 'tools/rainbow.html';});
     });
+
+    // Bubble Text
+    $('#item-four').hover(function() {
+        $('#item-four').html('&#9399;&#9444;&#9425;&#9425;&#9435;&#9428; &#9417;&#9428;&#9447;&#9443;');
+        $('#item-four').css('color', 'black');
+    },
+    function() {
+        $('#item-four').html('Bubble Text');
+        $('#item-four').css('color', 'grey');
+    }).click(function() {
+        resize(250, 275, 500, function(){window.location = 'tools/bubble.html';});
+    });
 });
