@@ -29,6 +29,7 @@
         "js/jquery-2.0.3.min.js",
         "js/tools.js",
         "js/flippedchars.js",
+        "js/bubblechars.js",
         "js/jquery.selection.js",
         "js/contentscript.js"
       ]

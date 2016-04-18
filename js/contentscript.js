@@ -45,5 +45,8 @@ chrome.runtime.onMessage.addListener(
 			case 'rainbowHTML':
 				replaceSelection(rainbowHTML($(document.activeElement).selection()));
 				break;
+			case 'bubble':
+				replaceSelection(bubble($(document.activeElement).selection()));
+				break;
 		}
 	});

@@ -22,6 +22,12 @@ function rainbowHTML(e) {
 	});
 };
 
+function bubble(e) {
+	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+		chrome.tabs.sendMessage(tabs[0].id, {textTool: 'bubble'});
+	});
+};
+
 chrome.contextMenus.create({
 	'title': 'Reverse selection',
 	'contexts': ['editable'],
@@ -44,4 +50,10 @@ chrome.contextMenus.create({
 	'title': 'Rainbowify - HTML',
 	'contexts': ['editable'],
 	'onclick': rainbowHTML
+});
+
+chrome.contextMenus.create({
+	'title': 'Bubble',
+	'contexts': ['editable'],
+	'onclick': bubble
 });
